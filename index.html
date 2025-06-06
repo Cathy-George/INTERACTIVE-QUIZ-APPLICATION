@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERACTIVE QUIZ APPLICATION</title>
+    <link href="sty.css" rel="stylesheet">
+</head>
+<body>
+    <section id="main">
+        <h1>QUIZ</h1>
+        <div class="instruct">
+            <details class="custom-details">
+            <summary class="view-more-button">Instructions</summary>
+            <div class="extra-content">
+            <ul>
+                <li>Answer all the questions, after which a submit button will appear make sure to click the submit button to view the result</li>
+                <li>Do not refer any outside references</li>
+                <li>Be modest</li>
+            </ul>
+            </div>
+        </details>
+        </div>
+        <div class="card" id="q1">
+            <h3>1. What does HTML stand for?</h3>
+            <form>
+                <label>
+                    <input type="radio" name="q1" value="HyperText Markdown Language">
+                    HyperText Markdown Language
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q1" value="HighText Machine Language">
+                    HighText Machine Language
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q1" value="HyperText Markup Language">
+                    HyperText Markup Language
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q1" value="HyperTool Marking Language">
+                    HyperTool Marking Language
+                </label><br>
+                <div class="feedback" id="feedback-q1"></div><br>
+                </form>
+        </div>
+        <div class="card" id="q2">
+            <h3>2. Which HTML tag is used to create a hyperlink?</h3>
+            <form>
+                <label>
+                    <input type="radio" name="q2" value="link">
+                    &lt;link&gt;
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="<a>">
+                    &lt;a&gt;
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="href">
+                    &lt;href&gt;
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="hyper">
+                    &lt;hyper&gt;
+                </label><br>
+                <div class="feedback" id="feedback-q2"></div><br>
+                </form>
+        </div>
+        <div class="card" id="q3">
+            <h3>3. What is the correct syntax to link a CSS file in HTML?</h3>
+            <form>
+                <label>
+                    <input type="radio" name="q3" value="css src='style.css'">
+                    &lt;css src="style.css"&gt;
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q3" value="style href='style.css'">
+                    &lt;style href="style.css"&gt;
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q3" value="<link rel='stylesheet' href='style.css'>">
+                    &lt;link rel='stylesheet' href='style.css'&gt;
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q3" value="<stylesheet>style.css</styleshee>">
+                    &lt;stylesheet&gt;style.css&lt;/stylesheet&gt;
+                </label><br>
+                <div class="feedback" id="feedback-q3"></div><br>
+                </form>
+        </div>
+        <div class="card" id="q4">
+            <h3> 4. Which property in CSS is used to change text color?</h3>
+            <form>
+                <label>
+                    <input type="radio" name="q4" value="text-color">
+                    text-color
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q4" value="fgcolor">
+                    fgcolor
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q4" value="font-color">
+                    font-color
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q4" value="color">
+                    color
+                </label><br>
+                <div class="feedback" id="feedback-q4"></div><br>
+                </form>
+        </div>
+        <div class="card" id="q5">
+            <h3>5. Which of the following is used to create a button in HTML?</h3>
+            <form>
+                <label>
+                    <input type="radio" name="q5" value="btn">
+                    &lt;btn&gt;
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q5" value="<button>">
+                    &lt;button&gt;
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q5" value="input type='btn'">
+                    &lt;input type="btn"&gt;
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q5" value="bttn">
+                    &lt;bttn&gt;
+                </label><br>
+                <div class="feedback" id="feedback-q5"></div><br>
+                </form>
+        </div>
+        <div class="card" id="q6">
+            <h3>6. Which HTML tag is used for the largest heading?</h3>
+
+            <form>
+            <label><input type="radio" name="q6" value="<h1>"> &lt;h1&gt; </label><br>
+            <label><input type="radio" name="q6" value="h3"> &lt;h3&gt; </label><br>
+            <label><input type="radio" name="q6" value="h6"> &lt;h6&gt; </label><br>
+            <label><input type="radio" name="q6" value="head"> &lt;head&gt; </label><br>
+            <div class="feedback" id="feedback-q6"></div><br>
+            </form>
+        </div>
+
+        <div class="btn-cont">
+            <button class="submit-btn">
+                submit
+            </button>
+        </div><br>
+        <div class="main" id="feed"></div>
+        <br>
+        <br>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
